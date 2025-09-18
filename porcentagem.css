@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Fjalla One", Arial, Helvetica, sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+:root {
+  --cor1: rgb(39, 134, 223);
+}
+body {
+  background-color: rgb(34, 34, 49);
+  width: 100%;
+  height: 100vh;
+}
+header #headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 4vw;
+  width: 100%;
+  height: 9vw;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  background-color: rgb(22, 22, 31);
+  color: var(--cor1);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.575);
+}
+header #logoEmpresa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  font-weight: bold;
+}
+header #logoEmpresa img {
+  width: 6vw;
+  border-radius: 50%;
+}
+header nav {
+  display: flex;
+  gap: 3vw;
+}
+header nav > a {
+  text-decoration: none;
+  color: rgb(94, 177, 255);
+  transition: color 0.2s;
+}
+header nav > a:hover {
+  color: rgb(185, 221, 255);
+  transition: color 0.2s;
+}
+header #headerH1 {
+  font-variant: small-caps;
+  padding: 7vw;
+  text-align: center;
+  background-color: rgb(25, 25, 41);
+  color: rgb(209, 226, 243);
+  font-size: 5vw;
+  text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.09);
+}
+
+div#linhaDivisao {
+  margin: 10px auto;
+  background-color: rgba(22, 22, 31, 0.486);
+  height: 2px;
+  width: 97%;
+  border-radius: 7px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vw;
+  margin: auto;
+  width: 90%;
+  color: rgb(209, 226, 243);
+}
+main div#calcularPorcentagem {
+  background-color: rgb(25, 25, 41);
+  border: 1px solid rgba(0, 81, 255, 0.432);
+}
+main p#tituloFormula {
+  width: 100%;
+  box-sizing: border-box;
+  font-variant: small-caps;
+  font-size: 7vw;
+  padding: 1.5vw 3vw;
+  background-color: rgb(22, 22, 31);
+  color: var(--cor1);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.575);
+}
+main section#conteudoMain {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3vw;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1vw;
+  padding: 3vw;
+}
+main form > section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 6vw;
+}
+main input {
+  background-color: rgb(53, 53, 68);
+  border: none;
+  color: rgb(209, 226, 243);
+  width: 60%;
+  height: 5.4vw;
+}
+main input:focus {
+  outline: 1px solid rgb(153, 153, 165);
+  transition: 1s;
+}
+main input::placeholder {
+  opacity: 0.8;
+  font-size: 3.5vw;
+  text-align: center;
+}
+main form input[type="button"] {
+  width: 100%;
+  font-size: 3.5vw;
+  border: none;
+  padding: 0.7vw;
+  border-radius: 1.5vw;
+  color: white;
+  background-color: var(--cor1);
+  transition: 0.2s;
+  margin-top: 2vw;
+}
+main form button:hover {
+  color: rgb(35, 60, 99);
+  background-color: rgb(100, 176, 247);
+  transition: 0.2s;
+}
+main section#resultado {
+  display: none;
+  margin: auto;
+  width: 100%;
+  color: rgb(209, 226, 243);
+  background-color: rgb(25, 25, 41);
+  border: 1px solid rgba(0, 81, 255, 0.432);
+}
+main section#resultado p#tituloResultado {
+  width: 100%;
+  box-sizing: border-box;
+  font-variant: small-caps;
+  font-size: 6.25vw;
+  padding: 1vw 3vw;
+  background-color: rgb(22, 22, 31);
+  color: var(--cor1);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.575);
+}
+main section#resultado p#resultado {
+  font-size: 5.3vw;
+  padding: 3vw;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: rgb(209, 226, 243);
+}
+
+
+/* Media Querys */
+
+@media screen and (min-width: 768px){
+  
+}

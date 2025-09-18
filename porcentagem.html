@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" href="porcentagem.css">
+</head>
+<body>
+    <header>
+        <div id="headerContainer">
+            <div id="logoEmpresa">
+                <img src="/pagina-principal/logo-empresa.png" alt="Logo X² Company">
+                <p>X² Company</p>
+            </div>
+            <nav>
+                <a href="/pagina-principal/index.html">Início</a>
+                <a href="#">Assinaturas</a>
+                <a href="#">Perfil</a>
+            </nav>
+        </div>
+        <div id="headerH1">
+            <h1>Porcentagem</h1>
+        </div>
+    </header>
+    <div id="linhaDivisao"></div>
+    <main>
+        <div id="calcularPorcentagem">
+            <p id="tituloFormula">Calcular Porcentagem</p>
+            <form>
+                <section id="sectionValorInicial">
+                    <label for="inputValorInicial">Valor Inicial</label>
+                    <input type="number" id="inputValorInicial" placeholder="Digite o valor inicial">
+                </section>
+                <section id="sectionPorcentagem">
+                    <label for="inputPorcentagem">Porcentagem</label>
+                    <input type="number" id="inputPorcentagem" placeholder="Digite a porcentagem">
+                </section>
+                <input type="button" value="Enviar">
+            </form>
+        </div>
+        <section id="resultado">
+            <p id="tituloResultado">Resultado</p>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <script src="porcentagem.js"></script>
+</body>
+</html>
