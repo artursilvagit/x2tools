@@ -104,14 +104,6 @@ main p#tituloFormula {
   z-index: 2;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.575);
 }
-main section#conteudoMain {
-  display: flex;
-  flex-direction: column;
-  gap: 2vw;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 3vw;
-}
 main form {
   display: flex;
   flex-direction: column;
@@ -131,6 +123,9 @@ main input {
   color: rgb(209, 226, 243);
   width: 60%;
   height: 5.4vw;
+  font-size: 3.5vw;
+  padding: 1vw;
+  box-sizing: border-box;
 }
 main input:focus {
   outline: 1px solid rgb(153, 153, 165);
@@ -185,9 +180,95 @@ main section#resultado p#resultado {
   text-decoration-color: rgb(209, 226, 243);
 }
 
-
 /* Media Querys */
 
-@media screen and (min-width: 768px){
-  
+@media screen and (min-width: 768px) {
+  header #headerContainer {
+    height: 6vw;
+    font-size: 3vw;
+  }
+  header #logoEmpresa {
+    gap: 1.5vw;
+  }
+  header #logoEmpresa img {
+    width: 4.5vw;
+  }
+  header #headerH1 {
+    padding: 4.5vw;
+    font-size: 3.5vw;
+  }
+
+  main {
+    width: 70%;
+  }
+  main div#calcularPorcentagem {
+    border: 2px solid rgba(0, 81, 255, 0.432);
+  }
+  main p#tituloFormula {
+    font-size: 4.3vw;
+    padding: 1vw 2vw;
+  }
+  main section#calcularPorcentagem {
+    gap: 1vw;
+  }
+  main form {
+    gap: 1vw;
+    padding: 2vw;
+  }
+  main form > section {
+    font-size: 3.8vw;
+  }
+  main input {
+    height: 4vw;
+    font-size: 3vw;
+    padding: 1vw;
+  }
+  main input:focus {
+    outline: 2px solid rgb(153, 153, 165);
+  }
+
+
+  main input::placeholder {
+    font-size: 2.5vw;
+  }
+  main form input[type="button"] {
+    font-size: 2.2vw;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    background-color: var(--cor1);
+    transition: 0.2s;
+    margin-top: 2vw;
+  }
+  main form button:hover {
+    color: rgb(35, 60, 99);
+    background-color: rgb(100, 176, 247);
+    transition: 0.2s;
+  }
+  main section#resultado {
+    display: none;
+    margin: auto;
+    width: 100%;
+    color: rgb(209, 226, 243);
+    background-color: rgb(25, 25, 41);
+    border: 1px solid rgba(0, 81, 255, 0.432);
+  }
+  main section#resultado p#tituloResultado {
+    width: 100%;
+    box-sizing: border-box;
+    font-variant: small-caps;
+    font-size: 6.25vw;
+    padding: 1vw 3vw;
+    background-color: rgb(22, 22, 31);
+    color: var(--cor1);
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.575);
+  }
+  main section#resultado p#resultado {
+    font-size: 5.3vw;
+    padding: 3vw;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(209, 226, 243);
+  }
 }
