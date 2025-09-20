@@ -1,0 +1,47 @@
+main input,
+div#incognita {
+  text-align: center;
+  width: 49%;
+}
+div#incognita {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(50, 96, 148);
+  border-radius: 0.6vw;
+  color: rgb(209, 226, 243);
+  height: 5.4vw;
+  font-size: 3.5vw;
+  padding: 1vw;
+  box-sizing: border-box;
+}
+
+
+/* Media Querys */
+
+/* Para telas com 768px de largura ou mais */
+@media screen and (min-width: 768px) {
+  div#incognita {
+    height: 4vw;
+    font-size: 3vw;
+    padding: 1vw;
+  }
+}
+
+/* Para telas com 1024px de largura ou mais */
+@media screen and (min-width: 1024px) {
+  div#incognita {
+    height: 3.5vw;
+    font-size: 2.5vw;
+    padding: 1vw;
+  }
+}
+
+/* Para telas com 1366px de largura ou mais */
+@media screen and (min-width: 1366px) {
+  div#incognita {
+    height: 2.5vw;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+  }
+}

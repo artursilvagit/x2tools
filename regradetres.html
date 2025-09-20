@@ -6,6 +6,7 @@
     <title>X² Tools</title>
     <link rel="shortcut icon" href="logo-empresa.png">
     <link rel="stylesheet" href="estiloBase.css">
+    <link rel="stylesheet" href="regradetres.css">
 </head>
 <body>
     <header>
@@ -21,21 +22,21 @@
             </nav>
         </div>
         <div id="headerH1">
-            <h1>Porcentagem</h1>
+            <h1>Regra De Três Simples</h1>
         </div>
     </header>
     <div id="linhaDivisao"></div>
     <main>
         <div id="calcularFormula">
-            <p id="tituloFormula">Calcular Porcentagem</p>
+            <p id="tituloFormula">Calcular Regra De Três</p>
             <form>
-                <section id="sectionValorInicial">
-                    <label for="inputValorInicial">Valor Inicial</label>
-                    <input type="number" id="inputValorInicial" placeholder="Digite o valor inicial">
+                <section id="sectionInputTop">
+                    <input type="number" id="inputA" placeholder="Digite o primeiro valor">
+                    <input type="number" id="inputC" placeholder="Digite o segundo valor">
                 </section>
-                <section id="sectionPorcentagem">
-                    <label for="inputPorcentagem">Porcentagem</label>
-                    <input type="number" id="inputPorcentagem" placeholder="Digite a porcentagem">
+                <section id="sectionInputBottom">
+                    <input type="number" id="inputB" placeholder="Digite o terceiro valor">
+                    <div id="incognita">X</div>
                 </section>
                 <input type="button" value="Enviar">
             </form>
@@ -46,6 +47,6 @@
         </section>
     </main>
 
-    <script src="porcentagem.js"></script>
+    <script src="regradetres.js"></script>
 </body>
 </html>
