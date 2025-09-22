@@ -9,5 +9,5 @@ let resultado = "";
 //Adicionando evento quando o botão for clicado e executando a função com arrow function:
 botaoEnviar.addEventListener("click", () => {
     resultado = (Number(inputC.value) * Number(inputB.value)) / Number(inputA.value)
-    divIncognita.textContent = resultado
+    divIncognita.textContent = resultado || "inválido"
 });

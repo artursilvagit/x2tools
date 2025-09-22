@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X² Tools</title>
+    <link rel="shortcut icon" href="logo-empresa.png">
+    <link rel="stylesheet" href="estiloBase.css">
+    <link rel="stylesheet" href="lucro.css">
+</head>
+<body>
+    <header>
+        <div id="headerContainer">
+            <div id="logoEmpresa">
+                <img src="logo-empresa.png" alt="Logo X² Company">
+                <p>X² Company</p>
+            </div>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="#">Assinaturas</a>
+                <a href="#">Perfil</a>
+            </nav>
+        </div>
+        <div id="headerH1">
+            <h1>Margem De Lucro</h1>
+        </div>
+    </header>
+    <div id="linhaDivisao"></div>
+    <main>
+        <div id="calcularFormula">
+            <p id="tituloFormula">Calcular Margem De Lucro</p>
+            <form>
+                <section id="sectionValorVenda">
+                    <label for="inputValorVenda" id="labelValorVenda">Preço De Venda</label>
+                    <input type="number" id="inputValorVenda" placeholder="Digite o preço de venda">
+                </section>
+                <section id="sectionPorcentagem">
+                    <label for="inputLucro">Lucro</label>
+                    <input type="number" id="inputLucro" placeholder="Digite o Lucro">
+                </section>
+                <input type="button" value="Enviar">
+            </form>
+        </div>
+        <section id="resultado">
+            <p id="tituloResultado">Resultado</p>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <script src="margemdelucro.js"></script>
+</body>
+</html>
